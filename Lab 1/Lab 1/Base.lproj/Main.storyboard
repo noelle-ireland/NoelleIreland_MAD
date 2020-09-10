@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="H58-yM-CzN">
+                                <rect key="frame" x="80.666666666666686" y="103" width="253" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuK-fg-EOf">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="VNb-eD-Z8r"/>
+                                        </constraints>
+                                        <state key="normal" title="Ben"/>
+                                        <connections>
+                                            <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fo1-XK-tim"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txj-SJ-1G4">
+                                        <rect key="frame" x="97.999999999999986" y="0.0" width="57.000000000000014" height="30"/>
+                                        <state key="normal" title="Jackson"/>
+                                        <connections>
+                                            <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpn-ck-Wis"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-bf-J45">
+                                        <rect key="frame" x="223" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Max"/>
+                                        <connections>
+                                            <action selector="changeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNr-lp-C0Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-6R-v0N">
+                                <rect key="frame" x="80.666666666666686" y="240.33333333333334" width="253" height="415.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7d-Wl-HzY">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Udu-2Z-YoN"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="yfw-rD-IwQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Family" translatesAutoresizingMaskIntoConstraints="NO" id="bfv-XT-h6F">
+                                        <rect key="frame" x="0.0" y="98.999999999999972" width="253" height="316.33333333333326"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Roommates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-i6-kqw">
+                                <rect key="frame" x="65" y="61" width="285" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="BFE-uX-Kd5"/>
+                                    <constraint firstAttribute="height" constant="20.333333333333343" id="Dvm-qb-UzD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iVK-i6-kqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Tm-Xj-bYI"/>
+                            <constraint firstItem="H58-yM-CzN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6RT-6P-M7q"/>
+                            <constraint firstItem="RKs-6R-v0N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gdj-kv-sWN"/>
+                            <constraint firstItem="H58-yM-CzN" firstAttribute="top" secondItem="iVK-i6-kqw" secondAttribute="bottom" constant="22.666666666666657" id="MI3-DH-zTP"/>
+                            <constraint firstItem="RKs-6R-v0N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VKb-Td-iU2"/>
+                            <constraint firstItem="iVK-i6-kqw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="uIV-84-dPC"/>
+                            <constraint firstItem="iVK-i6-kqw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xEp-4u-SVz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="changeCaption" destination="s7d-Wl-HzY" id="dfk-N4-E8z"/>
+                        <outlet property="personImage" destination="bfv-XT-h6F" id="Tet-Sd-NG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Family" width="253" height="316.33334350585938"/>
+    </resources>
+</document>
