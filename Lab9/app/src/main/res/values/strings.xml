@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">I scream for Ice Cream</string>
+    <string name="sweetCowHeading">Sweet Cow Choices</string>
+    <string name="radioVanilla">Vanilla</string>
+    <string name="radioChocolate">Chocolate</string>
+    <string name="radioMint">Mint</string>
+    <string name="icecreamButton">Create your Sundae</string>
+    <string name="sprinkleCheck">Sprinkles</string>
+    <string name="hotFugeCheck">Hot Fudge</string>
+    <string name="whippedCreamCheck">Whipped Cream</string>
+    <string name="MandMsCheck"><![CDATA[M&Ms]]></string>
+    <string name="togo">To Go</string>
+    <string name="locationButton">Flavor of the Day</string>
+    <string-array name="location">
+        <item>North Boulder</item>
+        <item>Table Mesa</item>
+        <item>Louisville</item>
+    </string-array>
+    <string name="title_activity_ice_cream">Ice Cream Info</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="feedbackHint">Feedback</string>
+</resources>
