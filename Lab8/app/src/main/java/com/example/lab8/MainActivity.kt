@@ -1,25 +1,20 @@
 package com.example.lab8
-
 import android.os.Bundle
 import android.view.View
 import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
-
-
 class MainActivity : AppCompatActivity() {
     var message: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
     fun createSundae(view: View) {
         var iceCream: CharSequence = ""
         var toppingList = "" //string
         val iceCreamID = radioGroup.checkedRadioButtonId
-
         if (iceCreamID == -1) {
             //snackbar
             val iceCreamSnackbar =
@@ -27,7 +22,6 @@ class MainActivity : AppCompatActivity() {
             iceCreamSnackbar.show()
         } else {
             iceCream = findViewById<RadioButton>(iceCreamID).text
-
             //checkboxes
             if (checkBox1.isChecked) {
                 toppingList += " " + checkBox1.text
@@ -44,33 +38,24 @@ class MainActivity : AppCompatActivity() {
             if (toppingList.isNotEmpty()) {
                 toppingList = "with" + toppingList
             }
-
             val location = "at " + spinner.selectedItem
-
             if (ToGoSwitch.isChecked) {
                 iceCream = ToGoSwitch.text.toString() + " $iceCream"
             }
-
             message = "You'd like a $iceCream Sundae $toppingList $location!"
-
             updateUI()
-
         }
-
     }
-
     fun updateUI() {
         messageTextView.text = message
     }
-
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putString("message", message)
         super.onSaveInstanceState(outState)
     }
-
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        message = savedInstanceState.getString("message","")
+        message = savedInstanceState.getString("message", "")
+        updateUI()
     }
-
 }

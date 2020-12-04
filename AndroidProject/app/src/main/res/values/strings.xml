@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Friend of Foe</string>
+    <string name="radioCompliment">Compliment</string>
+    <string name="radioInsult">Insult</string>
+    <string name="insultHeader">Friend of Foe?</string>
+    <string name="insultRadio">Insult</string>
+    <string name="complimentRadio">Compliment</string>
+    <string name="runButton">Run</string>
+    <string name="share">share</string>
+</resources>
